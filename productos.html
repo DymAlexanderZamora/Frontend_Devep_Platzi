@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
+    
+    <title>Document</title>
+    <style>
+    :root{
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --Hospital-greeen: #ACD9B2;
+    --white: #FFFFFF;
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+    }
+    body{
+        margin:0;
+        font-family:'Quicksand',sans serif;
+        max-width:360px;
+    }
+    .product-detail{
+        width: 360px;
+        padding: 24px;
+        box-sizing:border-box;
+        position: absolute;
+    }
+    .div-close{
+        background:var(--white);
+        width:24px;
+        height:24px;
+        position:absolute;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius:50%;
+    }
+    .deck img{
+        width:100%;
+    }
+    .dots {
+        text-align: center;
+    }
+    .dot {
+        cursor: pointer;
+        height: 8px;
+        width: 8px;
+        margin: 0 2px;
+        background-color: var(--very-light-pink);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .dots span:nth-child(1) {
+        background-color: var(--hospital-green);
+    }
+    .product-info{
+        margin-top:24px;
+        width:100%;
+    }
+    .product-info p:nth-child(1){
+        font-size:var(--md);
+        font-weight:bold;
+        margin-top:0;
+        margin-bottom:4px;
+    }
+    .product-info p:nth-child(2){
+        color:var(--very-light-pink);
+        font-size:var(--sm);
+        margin-top:0;
+        margin-bottom:4px;
+    }
+    .product-info p:nth-child(3){
+        color:var(--very-light-pink);
+        font-size:var(--md);
+        margin-top:0;
+        margin-bottom:4px;
+    }
+    .primary-button{
+        background-color: var(--Hospital-greeen);
+        border-radius:8px;
+        border:none;
+        color:var(--white);
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+        font-size:var(--md);
+        font-weight:bold;
+    }
+    .add-to-cart-button{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+            .product-info{
+                width:100%;
+                padding:0px 0px;
+                margin:24px 50px 0 0px;
+            }
+            .product-detail > img:nth-child(2){
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="div-close">
+            <img src="./Comaparaitvo/icons/icon_close.png" alt="close">
+        </div>
+        <div class="deck">
+        <img src="https://cardgamebase.com/wp-content/uploads/Starter-Commander-Decks-Decklists-2022-Guide-Banner.png" alt="deck">
+        </div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="product-info">
+            <p>$150.000</p>
+            <p>Decks Commander Para Pricipiante</p>
+            <p>Los siguientes Decks Siguen disponibles:  [First Flight], [Grave Danger], [Chaos Incarnate], [Draconic Destruction], [Token Triumph]</p>
+            <button class="primary-button add-to-cart-button">
+                <img src="./Comaparaitvo/icons/bt_add_to_cart.svg" alt="add_to_cart">
+            Agregar al Carro
+            </button>
+        </div>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Orden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
+    
+</head>
+<style>
+    :root{
+--black: #000000;
+--very-light-pink: #C7C7C7;
+--text-input-field: #F7F7F7;
+--Hospital-greeen: #ACD9B2;
+--white: #FFFFFF;
+--sm:14px;
+--md:16px;
+--lg:18px;
+}
+body{
+    margin:0;
+    font-family:'Quicksand',sans serif;
+}
+.my-order{
+    width:100%;
+    height:100%;
+    display:grid;
+    place-items:center;
+}
+.my-order-container{
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    width:300px;
+}
+.my-order-container h1{
+    font-size: var(--lg);
+}
+.my-order-content{
+    display:flex;
+    flex-direction:column;
+}
+.total{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:16px;
+    align-items:center;
+    background-color: var(--text-input-field);
+    margin-bottom:24px;
+    border-radius:8px;
+    padding: 0 24px 
+}
+.total p:nth-child(1){
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+}
+.total p span:nth-child(1){
+    font-size:var(--md);
+    font-weight:bold;
+}
+.total p span:nth-child(2){
+    font-size:var(--sm);
+    color:var(--Hospital-greeen);
+}
+.total p:nth-child(2){
+    font-weight:bold;
+    text-align:end;
+}
+.shopping-cart{
+    display:grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap:12px;
+    margin-bottom:12px;
+    align-items:center;
+}
+.shopping-cart figure{
+    margin:0;
+}
+.shopping-cart figure img{
+    width:72px;
+    height:72px;
+    border-radius:20px;
+    margin:0;
+    object-fit:cover;
+}
+.shopping-cart p:nth-child(2){
+    color:var(--very-light-pink);
+    align-items: center;
+}
+.shopping-cart p:nth-child(3){
+    font-size: var(--md);
+    font-weight:bold;
+
+}
+</style>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">Mi Carrito</h1>
+            <div class="my-order-content">
+                <div class="total">
+                    <p>
+                        <span>17/09/24</span>
+                        <span>3 articulos</span>
+                    </p>
+                    <p>$ 1'500.000</p>
+                </div>
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://media.wizards.com/2024/images/daily/en_1evbxdebdnag_04.png">
+                </figure>
+                <p>Magic Bloomwer</p>
+                <p>$ 500.000</p>
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://media.wizards.com/2022/images/daily/en_28NBweyydd.png">
+                </figure>
+                <p>Dominaria United</p>
+                <p>$ 500.000</p>
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://media.wizards.com/2022/images/daily/en_29zF8UnI33.png">
+                </figure>
+                <p>Token Triumph</p>
+                <p>$ 500.000</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
